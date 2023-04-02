@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
+// This Script represents what happen with player collide with the trampoline
+
 public class ActiveTrampScript : MonoBehaviour
 {
     [SerializeField]
@@ -15,9 +17,8 @@ public class ActiveTrampScript : MonoBehaviour
     {
         if (collision.gameObject.name == "Player")
         {
-            animator.SetTrigger("jump");
-
-            collision.gameObject
+            animator.SetTrigger("jump"); // triger the animation
+            collision.gameObject // player jump
                 .GetComponent<Rigidbody2D>()
                 .AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         }

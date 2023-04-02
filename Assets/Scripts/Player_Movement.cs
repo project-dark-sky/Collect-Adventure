@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+// This Script represents the player movments inside the game
+
 public class Player_Movement : MonoBehaviour
 {
     [SerializeField]

@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// This Script represents what happen when player collide with a fruit.
+
 public class CollectScript : MonoBehaviour
 {
     private const int PlayerLayer = 3;
@@ -19,10 +21,9 @@ public class CollectScript : MonoBehaviour
     {
         if (collision.gameObject.layer == PlayerLayer)
         {
-            Destroy(gameObject);
-            AudioSource.PlayClipAtPoint(collectSoundEffect, transform.position);
-
-            logic.addScore(1);
+            Destroy(gameObject); // destroy the fruit
+            AudioSource.PlayClipAtPoint(collectSoundEffect, transform.position); //collect sound
+            logic.addScore(1); //increamnt the score by 1
         }
     }
 }

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// This Script represents the moving platforms from point1 to point2
 public class MovingPlatformScript : MonoBehaviour
 {
     [SerializeField]
@@ -17,6 +18,7 @@ public class MovingPlatformScript : MonoBehaviour
 
     void Update()
     {
+        // check the distance from the platform and current point
         if (
             Vector2.Distance(targetPoints[currentPointIndex].transform.position, transform.position)
             < eps
@@ -28,7 +30,7 @@ public class MovingPlatformScript : MonoBehaviour
                 currentPointIndex = 0;
             }
         }
-
+        //move towards current point
         transform.position = Vector2.MoveTowards(
             transform.position,
             targetPoints[currentPointIndex].transform.position,

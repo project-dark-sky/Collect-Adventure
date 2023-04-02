@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+// This Script represents the player life durning the game
 public class PlayerLife : MonoBehaviour
 {
     [SerializeField]
@@ -14,6 +15,7 @@ public class PlayerLife : MonoBehaviour
     [SerializeField]
     private AudioClip deathSoundEffect;
 
+    // if the player collide with a trap
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Trap"))
@@ -35,10 +37,11 @@ public class PlayerLife : MonoBehaviour
     private void PlayerDie()
     {
         rb.bodyType = RigidbodyType2D.Static;
-        animator.SetTrigger("death");
+        animator.SetTrigger("death"); // triger the death animation
         AudioSource.PlayClipAtPoint(deathSoundEffect, transform.position);
     }
 
+    //inside the animation after seconds this function will invoke
     private void RestartGameLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);

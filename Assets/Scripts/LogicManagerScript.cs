@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+// This Script represents the controller for the logic ui
+
 public class LogicManagerScript : MonoBehaviour
 {
     [SerializeField]
