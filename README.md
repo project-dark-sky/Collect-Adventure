@@ -2,7 +2,7 @@
 
 #Unity Version: 2021.3.21f1
 
-#Run and Jump through the obstacles and collect the fruits along the way till the end point
+- Run and Jump through the obstacles and collect the fruits along the way till the endpoint.
 
 ![collectoPic](https://user-images.githubusercontent.com/70629274/229370684-89b845df-4ee3-4f42-b301-2198335251de.PNG)
 
