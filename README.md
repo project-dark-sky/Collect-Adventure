@@ -17,15 +17,14 @@ https://user-images.githubusercontent.com/70629274/229370881-0efc9bda-2149-4f6d-
 </br>
 
 ## Assets
+
 - https://assetstore.unity.com/packages/2d/characters/pixel-adventure-1-155360
-
-
 
 </br>
 
 ## itch.io
 
-- ProfileLink:- https://wissam111.itch.io/ 
+- ProfileLink:- https://wissam111.itch.io/
 - GameLink:- https://wissam111.itch.io/collect-adventure
 
 </br>
