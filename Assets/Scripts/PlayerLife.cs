@@ -18,9 +18,8 @@ public class PlayerLife : MonoBehaviour
     // if the player collide with a trap
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Trap"))
+        if (collision.gameObject.CompareTag("Trap") || collision.gameObject.CompareTag("Enemy"))
         {
-            Debug.Log("die");
             PlayerDie();
         }
     }
@@ -30,7 +29,6 @@ public class PlayerLife : MonoBehaviour
         if (collision.gameObject.CompareTag("FireTrap"))
         {
             PlayerDie();
-            AudioSource.PlayClipAtPoint(deathSoundEffect, transform.position);
         }
     }
 

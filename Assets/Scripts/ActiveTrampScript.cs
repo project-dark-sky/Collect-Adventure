@@ -13,9 +13,11 @@ public class ActiveTrampScript : MonoBehaviour
     [SerializeField]
     private float jumpForce = 10f;
 
+    const string playerTag = "Player";
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.name == "Player")
+        if (collision.gameObject.name == playerTag)
         {
             animator.SetTrigger("jump"); // triger the animation
             collision.gameObject // player jump

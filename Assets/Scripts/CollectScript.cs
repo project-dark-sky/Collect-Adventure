@@ -7,6 +7,7 @@ using UnityEngine;
 public class CollectScript : MonoBehaviour
 {
     private const int PlayerLayer = 3;
+    private const string logicScriptTag = "Logic";
     private LogicManagerScript logic;
 
     [SerializeField]
@@ -14,7 +15,7 @@ public class CollectScript : MonoBehaviour
 
     private void Start()
     {
-        logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicManagerScript>();
+        logic = GameObject.FindGameObjectWithTag(logicScriptTag).GetComponent<LogicManagerScript>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

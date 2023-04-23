@@ -8,6 +8,8 @@ TagManager:
   - Logic
   - Trap
   - FireTrap
+  - EnemyLogic
+  - Enemy
   layers:
   - Default
   - TransparentFX
